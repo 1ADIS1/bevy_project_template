@@ -1,8 +1,6 @@
 # This is a template for my Rust projects, used to be build with VSCode on Windows.
 
-* **Bevy 0.11**
-* **Parry2D**
-* **Rand**
+* **Bevy 0.12.1**
 
 _.vscode_ contains *tasks.json* that is used for executing rust code with shortcut: <code>"CTRL + SHIFT + B"</code>.
 
