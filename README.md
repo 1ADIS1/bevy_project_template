@@ -1,14 +1,22 @@
-# This is a template for my Rust projects, used to be build with VSCode on Windows.
+# This is a template for my Bevy projects, which have to be build with VSCode on Windows.
 
-* **Bevy 0.12.1**
+## **Crates**
 
-_.vscode_ contains *tasks.json* that is used for executing rust code with shortcut: <code>"CTRL + SHIFT + B"</code>.
+1. **Bevy**
+2. **bevy_embedded_assets**: embed assets folder inside binary files (including web)
+3. **bevy_inspector_egui**: to inspect entities in the game world.
 
-_.cargo_ contains code for dynamic lynking and faster compiling.
+## Details
+
+Project contains ball.png asset file and main.rs file with code for scene setup and basic 2D character controller.
+
+_.vscode_ contains *tasks.json* that is used for executing rust code with shortcut: <code>CTRL + SHIFT + B</code>.
+
+_.cargo_ contains code for dynamic linking and faster compiling.
 
 _rust-toolchain.toml_ is used for turning on the rust nightly compiler.
 
-# WASM Build
+## WASM Build
 
 **Run the following to build for web:** 
 
