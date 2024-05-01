@@ -26,8 +26,19 @@ TODO: add variable into cli to replace bevy_project_template name in commands.
    - <code>cargo install wasm-bindgen</code>
    - <code>cargo install wasm-bindgen-cli</code>
    - <code>cargo install wasm-opt</code>
-3. Comment dynamic linking and optimisations in **cargo.toml** and execute <code>cargo build --release --target wasm32-unknown-unknown</code>.
+3. Comment dynamic linking in **cargo.toml** and execute <code>cargo build --release --target wasm32-unknown-unknown</code>.
 4. Make javascript bindings using <code> wasm-bindgen --no-typescript --target web --out-dir ./wasm_out/ --out-name "bevy_project_template" ./target/wasm32-unknown-unknown/release/bevy_project_template.wasm </code>
 5. Optimise the wasm build <code>wasm-opt -Oz out/bevy_project_template_bg.wasm --output out/bevy_project_template_bg.wasm</code>
 6. Inside wasm_out folder add index.html file. The contents can be any, but the file must include this:
 7. Optional (for Itch.io): zip produced files into an archive <code> zip -j wasm_out/bevy_project_template.zip wasm_out/* </code>
+
+### Run locally
+
+Reference: https://bevy-cheatbook.github.io/platforms/wasm.html
+
+1. Update nightly toolchain: <code> rustup update </code>
+2. Install wasm-server: <code> cargo install wasm-server-runner </code>
+3. Add target to Cargo.toml file:
+   - <code> [target.wasm32-unknown-unknown] </code>
+   - <code> runner = "wasm-server-runner" </code>
+3. <code> cargo run --target wasm32-unknown-unknown </code>
