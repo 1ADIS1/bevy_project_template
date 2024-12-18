@@ -1,4 +1,4 @@
-# This is a template for my Bevy projects, which haы to be build with VSCode on Windows.
+# This is a template for my Bevy projects, which has to be build with VSCode on Windows.
 
 ## **Crates**
 
