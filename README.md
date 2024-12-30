@@ -3,12 +3,13 @@
 ## **Crates**
 
 1. **Bevy**
-2. **bevy_embedded_assets**: embed assets folder inside binary files (including web)
-3. **bevy_inspector_egui**: to inspect entities in the game world.
+2. **bevy_embedded_assets**: embed assets folder inside binary files (including web).
+3. **bevy_editor_pls**: simple editor build on top of bevy_inspector_egui.
+4. **bevy_asset_loader**: load assets in a specific state and automatically transition to next state. 
 
 ## Details
 
-Project contains ball.png asset file and main.rs file with code for scene setup and basic 2D character controller.
+Project contains ball.png asset file and main.rs file with code for scene setup.
 
 _.vscode_ contains *tasks.json* that is used for executing rust code with shortcut: <code>CTRL + SHIFT + B</code>.
 
