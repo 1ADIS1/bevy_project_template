@@ -6,12 +6,11 @@
         {
             "label": "cargo run",
             "type": "shell",
-            "command": "~/.cargo/bin/cargo", // note: full path to the cargo
+            "command": "cargo", // note: full path to the cargo
             "args": [
                 "run",
-                "--release",
-                // "--",
-                // "arg1"
+                "--features",
+                "bevy/dynamic_linking",
             ],
             "group": {
                 "kind": "build",
