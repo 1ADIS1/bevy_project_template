@@ -3,7 +3,6 @@
 
 use bevy::prelude::*;
 use bevy_asset_loader::prelude::*;
-use bevy_editor_pls::EditorPlugin;
 use bevy_embedded_assets::EmbeddedAssetPlugin;
 
 fn main() {
@@ -24,13 +23,11 @@ fn main() {
                 .set(WindowPlugin {
                     primary_window: Some(Window {
                         title: "Bevy project template".into(),
-                        // mode: bevy::window::WindowMode::Fullscreen,
-                        // resolution: RESOLUTION.into(),
+                        // mode: bevy::window::WindowMode::Fullscreen(MonitorSelection::Current),
                         ..default()
                     }),
                     ..default()
                 }),
-            EditorPlugin::default(),
         ))
         .init_state::<AppState>()
         .add_loading_state(
@@ -56,5 +53,5 @@ enum AppState {
 }
 
 fn spawn_2d_camera(mut commands: Commands) {
-    commands.spawn(Camera2dBundle { ..default() });
+    commands.spawn(Camera2d);
 }

@@ -11,6 +11,7 @@
                 "run",
                 "--features",
                 "bevy/dynamic_linking",
+                // "--release",
             ],
             "group": {
                 "kind": "build",

@@ -4,8 +4,7 @@
 
 1. **Bevy**
 2. **bevy_embedded_assets**: embed assets folder inside binary files (including web).
-3. **bevy_editor_pls**: simple editor build on top of bevy_inspector_egui.
-4. **bevy_asset_loader**: load assets in a specific state and automatically transition to next state. 
+3. **bevy_asset_loader**: load assets in a specific state and automatically transition to next state. 
 
 ## Details
 
